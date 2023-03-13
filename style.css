@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'MuseoModerno', cursive;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0; right: 0;
+    z-index: 1000;
+    background: transparent;
+    padding: 30px 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a{
+    position: relative;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 45px;
+}
+.navbar ::after{
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    border-radius: 8px;
+    transition: all ease .45s;
+}
+.navbar a:hover::after {
+    width: 100%;
+}
+.btnLogin-popup {
+    display: inline-block;
+    padding: 8px 32px;
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-left: 45px;
+    cursor: pointer;
+    transition: all ease .45s;
+}
+.btnLogin-popup:hover{
+    transform: scale(1.1);
+    background: #fff;
+    border: 2px solid #fff;
+    color: #162928;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(/img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    position: relative;
+    height: 530px;
+    width: 460px;
+    background: transparent;
+    border-radius: 24px;
+    border: 3px solid rgba(257, 257, 257, 4);
+    backdrop-filter: blur(25px);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all ease  .35s; 
+}
+.main-box{
+    padding: 50px;
+    width: 100%;
+}
+.main-box h1{
+    color: #162928;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+.input-box{
+    position: relative;
+    height: 52px;
+    width: 100%;
+    border-bottom: 2px solid #162928;
+    margin: 32px 0;
+}
+.input-box label{
+    position: absolute;
+    left: 6px;
+}
